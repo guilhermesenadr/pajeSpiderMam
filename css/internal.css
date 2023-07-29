@@ -1,0 +1,11 @@
+@import url(../css/global.css);
+@import url(../css/reset.css);
+
+.s-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+.s-wrapper .s-left-colum{
+    
+}
