@@ -8,7 +8,7 @@
         flex-direction: column;
     }
     .s-card{
-        border: 0.5rem solid black;
+        border: 0.5rem solid transparent;
         width: calc(100% - 28%);
         height: 70vh;
         margin-top: 25px;
