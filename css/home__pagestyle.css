@@ -17,6 +17,21 @@ body::before{
     transition: backgraund-image 2s ease-in-out, opacity 2s ease-in-out;
 }
 
+span#burguer{
+    background-color: white;
+    color: var(--primary-color);
+    display: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+span#burguer:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .s-menu{
     padding: 1rem 0;
     width: 100%;
@@ -142,4 +157,7 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered){
 
 .s-card--hovered .s-card__title{
     bottom: 50%;
+}
+.s-card--hovered .s-card{
+    border: none;
 }

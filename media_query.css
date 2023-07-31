@@ -4,6 +4,23 @@
     body::before{
         height: 100vh;
     }
+    span#burguer{
+        display: block;
+    }
+    .s-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .s-menu__itens{
+        display: none;
+
+    }
+    .s-menu__icon{
+        width: 2.5rem;
+        margin: 0 auto;
+    }
+
     .s-container{
         flex-direction: column;
     }
