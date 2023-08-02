@@ -1,6 +1,10 @@
 @import url(../css/reset.css);
 @import url(../css/global.css);
 @import url(../assets/componentes/_navigation.css);
+@import url(../assets/componentes/pills.css);
+@import url(../assets/componentes/_link-buttom.css);
+@import url(../assets/componentes/gallery.css);
+
 
 .s-wrapper{
     display: flex;
@@ -26,8 +30,9 @@
     width: 100%;
     background-color: grey;
     padding-left: 130px;
-
- }
+    background-image: url('../assets/image/spider-tobei/movie-01/background.png');
+    background-size: cover;
+}
 
  /* farei o componente do main em baixo para componentizar*/
  .s-wrapper .s-main-content__top{
@@ -49,4 +54,25 @@
     margin-top: 50px;
     margin-left: 0;
     margin-bottom: 30px;
+}
+.s-wrapper .s-main-content__top .s-description{
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;   
+}
+.s-wrapper .s-main-content__top .s-description .s-description__text p{
+    color: white;
+    line-height: 170%;
+}
+.s-wrapper .s-main-content__top .s-description .pills{
+    margin-bottom: 20px;
+}
+.s-wrapper .s-main-content .s-links{
+    padding: 20px;
+    padding-left: 0;
+}
+.s-wrapper .s-main-content .s-links ul{
+    display: flex;
+    flex-direction: row;
 }
