@@ -12,6 +12,11 @@
     flex-flow: row nowrap;
     
 }
+.s-wrapper video{
+    position: fixed;
+    width: 100%;
+
+}
 .s-wrapper .s-left-colum{
     width: 100px;
     height: 100%;
@@ -28,10 +33,8 @@
  .s-wrapper .s-main-content{
     height: 100%;
     width: 100%;
-    background-color: grey;
     padding-left: 130px;
-    background-image: url('../assets/image/spider-tobei/movie-01/background.png');
-    background-size: cover;
+    position: relative;
 }
 
  /* farei o componente do main em baixo para componentizar*/
@@ -75,4 +78,16 @@
 .s-wrapper .s-main-content .s-links ul{
     display: flex;
     flex-direction: row;
+}
+.spiderman-01-01{
+    background-image: url('../assets/image/spider-tobei/movie-01/background.png');
+    background-size: cover;
+}
+.spiderman-01-02{
+    background-image: url('../assets/image/spider-tobei/movie-01/background2.png');
+    background-size: cover;
+}
+.spiderman-01-03{
+    background-image: url('../assets/image/spider-tobei/movie-01/background3.png');
+    background-size: cover;
 }
