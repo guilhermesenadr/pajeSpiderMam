@@ -22,33 +22,35 @@
 
 <div class="s-container">
 
-    <a href="pajes/toby maguaire/spiderman1.html" class="s-card" id="spider-man-01">
-        <img class="s-card__background" src="assets/image/pic-sm-bg-01.jpg" alt="foto de uma rua de New York">
-        <img class="s-card__image" src="assets/image/spider-man-01.png" alt="spider man">
-        <h2 class="s-card__title">Tobei Maguire</h2>
-    </a>
-    <a href="pajes/toby maguaire/spiderman2.html" class="s-card" id="spider-man-02">
-        <img class="s-card__background" src="assets/image/pic-sm-bg-02.jpg" alt="foto de uma rua de New York">
-        <img class="s-card__image" src="assets/image/spider-man-02.png" alt="spider man">
-        <h2 class="s-card__title">Tom Holland</h2>
-    </a>
-    <a href="pajes/toby maguaire/spiderman3.html" class="s-card" id="spider-man-03">
-        <img class="s-card__background" src="assets/image/pic-sm-bg-03.jpg" alt="foto de uma rua de New York">
-        <img class="s-card__image" src="assets/image/spider-man-03.png" alt="spider man">
-        <h2 class="s-card__title">Andrew Garfield</h2>
-    </a>
+    <div class="s-card-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+        <a href="pajes/toby maguaire/spiderman1.html" class="s-card" id="spider-man-01">
+            <img class="s-card__background" src="assets/image/pic-sm-bg-01.jpg" alt="foto de uma rua de New York">
+            <img class="s-card__image" src="assets/image/spider-man-01.png" alt="spider man">
+            <h2 class="s-card__title">Tobei Maguire</h2>
+        </a>
+        <a href="pajes/toby maguaire/spiderman2.html" class="s-card" id="spider-man-02">
+            <img class="s-card__background" src="assets/image/pic-sm-bg-02.jpg" alt="foto de uma rua de New York">
+            <img class="s-card__image" src="assets/image/spider-man-02.png" alt="spider man">
+            <h2 class="s-card__title">Tom Holland</h2>
+        </a>
+        <a href="pajes/toby maguaire/spiderman3.html" class="s-card" id="spider-man-03">
+            <img class="s-card__background" src="assets/image/pic-sm-bg-03.jpg" alt="foto de uma rua de New York">
+            <img class="s-card__image" src="assets/image/spider-man-03.png" alt="spider man">
+            <h2 class="s-card__title">Andrew Garfield</h2>
+        </a>
+    </div>
 </div>
 <div class="s-controller">
-    <div class="s-controller__buttom">
+    <div id="1" onclick="selectCarouselItem(this)" class="s-controller__buttom s-controller__buttom--active">
         01
     </div>
-    <div class="s-controller__buttom">
+    <div id="2" onclick="selectCarouselItem(this)" class="s-controller__buttom">
         02
     </div>
-    <div class="s-controller__buttom">
+    <div id="3" onclick="selectCarouselItem(this)" class="s-controller__buttom">
         03
     </div>
-    <div class="s-controller__line"></div>
+    <div  class="s-controller__line"></div>
 </div>
 <script src="assets/javascript/motor.js"></script>
 </body>

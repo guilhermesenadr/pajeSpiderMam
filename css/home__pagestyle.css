@@ -54,13 +54,24 @@ span#burguer:hover{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
 }
 .s-card{
     border: 0.5rem solid white;
-    width: calc(100% / 3 - 8%);
+    width: 100%;
     height: 70vh;
     position: relative;
+    position: absolute;
     transition: .5s ease-in-out;
+}
+.s-card:nth-child(1){
+    transform: rotateY(0deg) translateZ(50vw);
+}
+.s-card:nth-child(2){
+    transform: rotateY(120deg) translateZ(50vw);
+}
+.s-card:nth-child(3){
+    transform: rotateY(240deg) translateZ(50vw);
 }
 .s-card__background{
     width: 100%;
@@ -87,11 +98,13 @@ span#burguer:hover{
     transition: bottom 2s ease-in-out;
 }
 .s-controller{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 }
 .s-controller__buttom{
     display: flex;
@@ -114,6 +127,12 @@ span#burguer:hover{
 }
 .s-controller__buttom:hover{
     transform: scale(1.5);
+}
+.s-controller__buttom--active{
+    background-color: white;
+    color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    outline: 0.1255rem solid white;
 }
 
 .s-controller__line{
@@ -160,4 +179,10 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered){
 }
 .s-card--hovered .s-card{
     border: none;
+}
+.s-card-carousel{
+    display: flex;
+    justify-content: center;
+    width: calc(100vw / 3 - 10%);
+    transform-style: preserve-3d;
 }

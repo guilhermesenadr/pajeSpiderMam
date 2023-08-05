@@ -31,5 +31,11 @@ function addEventListenersToCard(){
         card.addEventListener('mouseleave', handleMouseLeave)
     }
 }
-document.addEventListener("DOMContentLoaded", addEventListenersToCard)
+document.addEventListener("DOMContentLoaded", addEventListenersToCard, false)
 
+function selectCarouselItem(selectedButtonElement){
+  const selectedItem = selectedButtonElement.id
+  const carousel = document.querySelector('.s-card-carousel')
+
+  console.log(carousel)
+}
